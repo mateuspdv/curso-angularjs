@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="cursoAngularJS">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso AngularJS</title>
+    <script src="angular.js"></script>
+    <script>
+        angular.module("cursoAngularJS", []);
+        angular.module("cursoAngularJS").controller("cursoAngularJSController", function ($scope) {
+            $scope.message = "Hello World!";
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller="cursoAngularJSController">
+        {{ message }}
+    </div>
+</body>
+</html>
